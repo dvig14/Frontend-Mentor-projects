@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Josefin+Sans:wght@300;400;600&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@500;700&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto:wght@400;700&family=Space+Grotesk:wght@500&display=swap');
+:root{
+    --Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --Red: hsl(0, 100%, 66%);
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Space Grotesk','sans-serif';
+}
+body{
+    font-size:18px;
+    display:flex;
+    justify-content:space-between;
+    min-height:100vh;
+}
+.bg-main{
+    position:relative;
+    width:30%;
+    background:url('images/bg-main-desktop.png') no-repeat;
+}
+.cards{
+    position:absolute;
+    top:50%;
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+    left:100%;
+    transform:translate(-50%,-50%);
+}
+.card-front{
+    position:relative;
+    transform:translateX(-100px);
+}
+.cardf-detail img{
+    position:absolute;
+    top:1.5rem;
+    left:2rem;
+}
+.cardf-detail p{
+    position:absolute;
+    bottom:4.5rem;
+    left:2rem;
+    font-size:1.65rem;
+    color:var(--White);
+    letter-spacing:0.22rem;
+}
+.value{ 
+    display:flex;
+    justify-content:space-between;
+    color:var(--White);
+    font-size:0.75rem;
+    position:absolute;
+    bottom:2rem;
+    left:2rem;
+    right:1.5rem;
+    text-transform:uppercase;
+    letter-spacing:0.15rem;
+}
+.card-back{position:relative;}
+#cvc{font-size:0.9rem;position:absolute;top:7rem;right:3.3rem;color:var(--White);letter-spacing:0.1rem;}
+.card-form{display:flex;justify-content:center;}
+form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:0.8rem;
+    width:53%;
+}
+.person-name,.card-number,.exp-date,.cvc{
+    display:flex;
+    flex-direction:column;
+    gap:0.3rem;
+}
+.dates,.time{ display:flex;gap:0.5rem;}
+label{text-transform:uppercase;font-size:0.73rem;color:var( --Very-dark-violet);}
+input,button{padding:0.7rem;border-radius:0.5rem;cursor:pointer;}
+input{border:1px solid var( --Light-grayish-violet);}
+::placeholder{color:hsla(0, 1%, 75%, 0.744);}
+input:focus{outline:none;border:1px solid hsl(278, 94%, 30%);}
+.exp-date,.cvc{width:50%;}
+.time input,.cvc input{width:100%;}
+button{color:var(--White);background:var(--Very-dark-violet);}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+      -webkit-appearance:none;
+}
+/*firefox*/
+input[type=number]{ --moz-appearance:textfield;}
+.err{color:var(--Red);font-size:0.75rem;}
+
+@media screen and (max-width:1090px){
+    .cards{transform:translate(-34%,-50%);}
+    form{margin-right:-9rem;width:60%;}
+    .card-front>img,.card-back>img{width:390px;}
+    .cardf-detail p{font-size:1.48rem}
+    #cvc{top:6rem;}
+}
+@media screen and (max-width:790px){
+    body{flex-direction:column;gap:9.5rem;justify-content:flex-start;}
+    .bg-main{
+        min-width:100vw;
+        height:200px;
+        background:url('images/bg-main-mobile.png');
+    }
+    .cards{
+        top:10%;
+        flex-direction:column-reverse;
+        transform:none;
+        margin:0 12rem;
+        left:0%;
+        gap:0rem;
+    }
+    .card-front{transform:translateY(-100px);z-index:1;}
+    .card-back{transform:translateX(80px);}
+    .card-front>img,.card-back>img{width:300px;}
+    .cardf-detail img{width:50px;}
+    .cardf-detail p{font-size:1rem;}
+    #cvc{font-size:0.8rem;top:4.5rem;right:2rem;}
+    .value{font-size:0.65rem;}
+    form{width:80%;margin-right:0rem;}
+}
+@media screen and (max-width:576px){
+    .cards{margin:0 5rem;}
+}
+@media screen and (max-width:470px){
+    .cards{margin:0 3rem;}
+    .card-front{transform:translateY(-80px);}
+    .card-back{transform:translateX(55px);}
+    .card-front>img,.card-back>img{width:300px;height:100%;}
+}
+@media screen and (max-width:412px){
+    .cards{margin:0 1rem;}
+}
+@media screen and (max-width:370px){
+    .cards{margin:0 0rem;}
+}

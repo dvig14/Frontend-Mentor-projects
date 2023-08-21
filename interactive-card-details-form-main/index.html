@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Interactive card details form</title>
+</head>
+<body>
+      <aside class="bg-main">
+        <div class="cards">
+         <div class="card-front">
+          <img src="images/bg-card-front.png" alt="card-front">
+          <div class="cardf-detail">
+           <img src="images/card-logo.svg" alt="logo">
+            <p id="c-num">0000 0000 0000 0000</p>
+            <div class="value">
+              <span id="nam">Jane Appleseed</span>
+              <div class="num">
+                <span id="mnth">00</span>
+                /
+                <span id="yr">00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-back">
+          <img src="images/bg-card-back.png" alt="card-back">
+           <span id="cvc">000</span>
+        </div>
+      </div>
+      </aside>
+      <main class="card-form">
+          <form>
+            <div class="person-name">
+             <label>Cardholder Name</label>
+              <input type="text" placeholder="e.g. Jane Appleseed" id="name">
+              <span></span>
+            </div>
+            <div class="card-number">
+              <label>Card Number</label>
+              <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="card-num">
+              <span></span>
+            </div>
+            <div class="dates">
+               <div class="exp-date">
+                  <label>Exp. Date (MM/YY)</label>
+                 <div class="time">
+                  <input type="number" placeholder="MM" id="month">
+                  <input type="number" placeholder="YY" id="year">
+                 </div>
+                 <span></span>
+                </div>
+                <div class="cvc">
+                <label>CVC</label>
+                <input type="number" placeholder="e.g. 123" id="cvc-inp">
+                <span></span>
+               </div>
+            </div>
+            <button id="btn" type="confirm">Confirm</button>
+          </form>
+
+        </main>
+  <!-- Completed state start 
+
+  Thank you!
+  We've added your card details
+  Continue-->
+  
+<script src="script.js"></script>
+</body>
+</html>
