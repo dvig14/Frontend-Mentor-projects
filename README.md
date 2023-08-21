@@ -7,4 +7,4 @@
 
 4.interactive-card-URL:https://dvig14.github.io/Frontend-Mentor-projects/interactive-card-details-form-main/
 
-5.notification-pg-URL:https://dvig14.github.io/Frontend-Mentor-projects/notification-page-main/
+5.notification-pg-URL:https://dvig14.github.io/Frontend-Mentor-projects/notifications-page-main/
