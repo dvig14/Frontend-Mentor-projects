@@ -6,3 +6,5 @@
 3.tip-calculator-URL:https://dvig14.github.io/Frontend-Mentor-projects/tip-calculator-app-main/
 
 4.interactive-card-URL:https://dvig14.github.io/Frontend-Mentor-projects/interactive-card-details-form-main/
+
+5.notification-pg-URL:https://dvig14.github.io/Frontend-Mentor-projects/notification-page-main/
