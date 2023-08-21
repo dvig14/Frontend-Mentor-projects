@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
+</head>
+<body>
+  <main class="wrapper">
+      <img src="images/logo.svg" alt="logo">
+      <div class="container">
+        <div class="enter-values">
+          <div class="bill-amount">
+            <div class="heading-err">
+              <label>Bill</label>
+              <span></span>
+            </div>
+            <div class="icon-inp">
+              <img src="images/icon-dollar.svg" alt="">
+              <input type="number" placeholder="0" id="bill">
+            </div>
+          </div>
+          <div class="S-tip">
+            <label>Select Tip %</label>
+            <ul class="tips">
+              <li class="tip tip-active">5%</li>
+              <li class="tip">10%</li>
+              <li class="tip">15%</li>
+              <li class="tip">25%</li>
+              <li class="tip">50%</li>
+              <li class="tip"><input type="number" placeholder="Custom" id="cTip"></li>
+            </ul>
+          </div>
+          <div class="people-number">
+            <div class="heading-err">
+              <label>Number of People</label>
+              <span></span>
+            </div>
+            <div class="icon-inp">
+              <img src="images/icon-person.svg" alt="">
+              <input type="number" placeholder="0" id="n-people">
+            </div>
+          </div>
+        </div>
+          <div class="calculation">
+            <div class="tip-amt-val result">
+              <div class="txt">
+                <span>Tip Amount</span>
+                <span>/ person</span>
+              </div>
+              <span></span>
+            </div>
+            <div class="total-val result">
+              <div class="txt">
+                <span>Total</span>
+                <span>/ person</span>
+              </div>
+              <span></span>
+            </div>
+            <button id="reset-btn">Reset</button>
+          </div>
+      </div>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
