@@ -66,6 +66,7 @@ function theme3(){
 }
 
 /*-------------------------------------------------------CALCULATIONS--------------------------------------------------*/
+
 keys.forEach((key)=>{
      key.addEventListener('click',()=>{
          let keyVal=key.innerText;
@@ -92,7 +93,9 @@ function operatorNum(op){
      }
      return op;
 }
+
 /*------------------------------Screen--------------------------*/
+
 function displayScreen(screen){
      if(screen.length>3){
         if(screen.match(/^[0-9\,]+$/)||(screen.match(/^[0-9\,-]+$/)&&screen<0)){
@@ -121,6 +124,7 @@ function splitStr(val){
 }
 
 /*-------------------------------------Result(=)---------------------*/
+
 equalTo.addEventListener('click',()=>{
         try{
             const clrInp=clearInput(display.value);
@@ -151,7 +155,9 @@ function clearInput(inpVal){
     }
       return inpArr.join('');
 }
+
 /*-------------------------DELETE btn----------------------*/
+
 delClr[0].addEventListener('click',()=>{
     if(display.value.match(/^[0-9\,\.]+$/)||display.value.match(/^[0-9\,]+$/)){
         display.value=displayScreen(display.value.substring(0,display.value.length-1));
@@ -161,7 +167,9 @@ delClr[0].addEventListener('click',()=>{
         display.value=operator(display.value);
     }
 })
+   
 /*---------------------------Reset btn----------------------*/
+
 delClr[1].addEventListener('click',()=>{
     display.value='';
 })
