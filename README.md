@@ -8,3 +8,5 @@
 4.interactive-card-URL:https://dvig14.github.io/Frontend-Mentor-projects/interactive-card-details-form-main/
 
 5.notification-pg-URL:https://dvig14.github.io/Frontend-Mentor-projects/notifications-page-main/
+
+6.Ecommerce-Add-to-cart-Url:https://dvig14.github.io/Frontend-Mentor-projects/ecommerce-product-page-main/
