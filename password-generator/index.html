@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" />
+    <title>Password Generator</title>
+</head>
+<body>
+    <main class="container">
+      <h1>Password Generator</h1>
+      <div class="password">
+        <p>P4$5W0rD!</p>
+        <p id="copied"></p>
+        <i class="fa-regular fa-copy"></i>
+      </div>
+      <div class="options">
+        <label for="slider">Character Length<span id="sliderVal">0</span></label>
+        <input type="range" id="slider" name="slider" min="8" max="15" value="0">
+        <div class="chkboxes">
+          <label for="upperCase" class="chckBox">
+            <input type="checkbox" id="uppercase" name="upperCase" class="chk"> Include Uppercase Letters
+          </label>
+          <label for="lowerCase" class="chckBox">
+            <input type="checkbox" id="lowercase" name="lowerCase" class="chk"> Include Lowercase Letters
+          </label>
+          <label for="numbers" class="chckBox">
+            <input type="checkbox" id="numbers" name="numbers" class="chk"> Include Numbers
+          </label>
+          <label for="symbols" class="chckBox">
+            <input type="checkbox" id="symbols" name="symbols" class="chk"> Include Symbols
+          </label>
+        </div>
+        <div class="strength">
+          <p>strength</p>
+          <p id="str-type"></p>
+          <div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <button id="generate-btn">generate</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
