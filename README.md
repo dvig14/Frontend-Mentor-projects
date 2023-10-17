@@ -11,4 +11,4 @@
 
 6.Ecommerce-Add-to-cart-Url:https://dvig14.github.io/Frontend-Mentor-projects/ecommerce-product-page-main/
 
-7.Password Generator:https://dvig14.github.io/Frontend-Mentor-projects/Password-Generator
+7.Password Generator:https://dvig14.github.io/Frontend-Mentor-projects/password-generator
